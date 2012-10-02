@@ -1,0 +1,107 @@
+body {
+	 font-weight: 300;
+}
+
+header {
+	margin-top:20px;
+	margin-bottom:-120px;
+}
+
+header img {
+	width: 75px;
+	margin-top: -19px;
+}
+
+.nav {
+	padding:5px 0px;
+	text-align: right
+}
+
+.nav a {
+	margin-left:20px;
+	color:gray;
+}
+
+.nav a:first-child {
+	margin-left:0px;
+}
+
+.main {
+	margin-top:120px;
+}
+
+.appRow {
+	padding: 10px 10px 30px 10px;
+	height:110px;
+}
+
+.appDesc {
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+
+.appText {
+	display:none;
+}
+
+.appPhoto {
+	.rounded(10px);
+	width:70px;
+	float:left;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+.appPhoto:hover {
+	.rotate(-7deg);
+}
+
+.appDesc {
+	padding:10px;
+}
+
+footer {
+	text-align: right;
+}
+
+footer img {
+	margin-top:30px;
+	margin-right:3px;
+	width:40px;
+	-webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+
+footer img:hover {
+	-webkit-filter: grayscale(0); /* Google Chrome & Safari 6+ */
+	.rotate(-7deg);
+}
+
+.copy {
+	float:left;
+	margin:20px 0px;
+}
+
+/* mixins */
+.rounded(@in) {
+  -webkit-border-radius: @in;
+     -moz-border-radius: @in;
+          border-radius: @in;
+}
+
+.rotate(@in) {
+	-webkit-transform: rotate(@in);
+	-moz-transform: rotate(@in);
+	-o-transform: rotate(@in);
+	-ms-transform: rotate(@in);
+}
+
+/* Jumbotrons
+-------------------------------------------------- */
+.jumbotron h1 {
+  font-size: 85px;
+  font-weight: bold;
+  letter-spacing: -4px;
+  line-height: 1;
+  margin-left:-4px;
+}
+
